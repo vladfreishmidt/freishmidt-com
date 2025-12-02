@@ -1,0 +1,23 @@
+{{define "base"}}
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>{{template "title" .}} - Freishmidt</title>
+    <link rel="stylesheet" href="/static/css/main.css?ver=1.0.0">
+</head>
+
+<body>
+    <header>
+        <h1><a href='/'>Freishmidt</a></h1>
+    </header>
+    {{template "nav" .}}
+    <main>
+        {{template "main" .}}
+    </main>
+    <footer>Powered by <a href="#">ME</a>
+</body>
+
+</html>
+{{end}}
